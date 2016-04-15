@@ -16,7 +16,7 @@ public class TitleActivity extends AppCompatActivity {
         findViewById(R.id.title_button_start).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(TitleActivity.this, ResultDisplayActivity.class));
+                startActivity(new Intent(TitleActivity.this, ImageSelectActivity.class));
             }
         });
     }

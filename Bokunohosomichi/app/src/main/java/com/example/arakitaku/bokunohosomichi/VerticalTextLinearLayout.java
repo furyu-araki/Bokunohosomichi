@@ -28,6 +28,7 @@ public class VerticalTextLinearLayout extends LinearLayout {
             TextView textView = new TextView(getContext());
             textView.setTextSize(30);
             textView.setText(chars, i, 1);
+            textView.setBackgroundColor(getResources().getColor(R.color.resultTextBackground));
             addView(textView);
         }
     }

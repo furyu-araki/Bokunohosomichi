@@ -26,6 +26,7 @@ public class VerticalTextLinearLayout extends LinearLayout {
         char[] chars = text.toCharArray();
         for (int i = 0; i < chars.length; i++) {
             TextView textView = new TextView(getContext());
+            textView.setTextSize(30);
             textView.setText(chars, i, 1);
             addView(textView);
         }

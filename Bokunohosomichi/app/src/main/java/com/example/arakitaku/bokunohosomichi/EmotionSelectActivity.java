@@ -17,7 +17,7 @@ public class EmotionSelectActivity extends AppCompatActivity {
         setContentView(R.layout.activity_emotion_select);
     }
 
-    public void b0(View v) {
+    public void b1(View v) {
         ((TextView) findViewById(R.id.top_text)).setText("ほげ");
     }
 }

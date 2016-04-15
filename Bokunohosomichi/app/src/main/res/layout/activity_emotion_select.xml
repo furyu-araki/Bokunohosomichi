@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/b0"
-        android:onClick="b1"
+        android:onClick="b2"
         android:text="苛立たしい" />
 
     <Button
@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/b0"
-        android:onClick="b1"
+        android:onClick="b3"
         android:text="哀しい" />
 
     <Button
@@ -38,6 +38,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/b0"
-        android:onClick="b1"
+        android:onClick="b4"
         android:text="楽しい" />
 </LinearLayout>

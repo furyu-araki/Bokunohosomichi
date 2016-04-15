@@ -12,6 +12,16 @@ import android.widget.TextView;
  */
 public class EmotionSelectActivity extends AppCompatActivity {
 
+    protected void SetResult(EmotionSelectResult.Emotion emotion)
+    {
+        EmotionSelectResult emotionSelectResult = EmotionSelectResult.GetInstance();
+        emotionSelectResult.Set( emotion );
+    }
+    protected void GoNextIntent()
+    {
+        startActivity(new Intent(EmotionSelectActivity.this, ResultDisplayActivity.class));
+    }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,9 +29,22 @@ public class EmotionSelectActivity extends AppCompatActivity {
     }
 
     public void b1(View v) {
-        EmotionSelectResult emotionSelectResult = EmotionSelectResult.GetInstance();
-        emotionSelectResult.Set( EmotionSelectResult.Emotion.Presure );
+        SetResult( EmotionSelectResult.Emotion.Presure );
+        GoNextIntent();
+    }
 
-        startActivity(new Intent(EmotionSelectActivity.this, ResultDisplayActivity.class));
+    public void b2(View v) {
+        SetResult( EmotionSelectResult.Emotion.Anger );
+        GoNextIntent();
+    }
+
+    public void b3(View v) {
+        SetResult( EmotionSelectResult.Emotion.Sad );
+        GoNextIntent();
+    }
+
+    public void b4(View v) {
+        SetResult( EmotionSelectResult.Emotion.Fun );
+        GoNextIntent();
     }
 }

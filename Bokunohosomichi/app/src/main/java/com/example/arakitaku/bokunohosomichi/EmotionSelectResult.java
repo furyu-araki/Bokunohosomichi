@@ -5,12 +5,17 @@ package com.example.arakitaku.bokunohosomichi;
  */
 public class EmotionSelectResult {
 
-    public enum Emotion
-    {
-        Presure,
-        Anger,
-        Sad,
-        Fun
+    public enum Emotion {
+        Presure(1),
+        Anger(2),
+        Sad(3),
+        Fun(4);
+
+        private final int id;
+
+        private Emotion(final int id) {
+            this.id = id;
+        }
     }
 
     private static EmotionSelectResult emotionSelectResult;
@@ -18,7 +23,7 @@ public class EmotionSelectResult {
 
     private EmotionSelectResult(){}
 
-    public EmotionSelectResult GetInstance()
+    public static EmotionSelectResult GetInstance()
     {
         if ( emotionSelectResult == null )
         {

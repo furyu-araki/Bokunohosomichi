@@ -19,7 +19,9 @@ public class EmotionSelectActivity extends AppCompatActivity {
     }
 
     public void b1(View v) {
-        ((TextView) findViewById(R.id.top_text)).setText("ほげ");
+        EmotionSelectResult emotionSelectResult = EmotionSelectResult.GetInstance();
+        emotionSelectResult.Set( EmotionSelectResult.Emotion.Presure );
+
         startActivity(new Intent(EmotionSelectActivity.this, ResultDisplayActivity.class));
     }
 }

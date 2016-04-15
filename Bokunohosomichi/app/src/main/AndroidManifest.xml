@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ImageSelectActivity" />
+        <activity android:name=".EmotionSelectActivity" />
     </application>
 
 </manifest>

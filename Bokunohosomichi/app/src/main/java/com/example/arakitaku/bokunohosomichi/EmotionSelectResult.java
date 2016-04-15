@@ -22,7 +22,7 @@ public class EmotionSelectResult {
     {
         if ( emotionSelectResult == null )
         {
-            emotionSelectResult = new EmotionSelectResult;
+            emotionSelectResult = new EmotionSelectResult();
         }
         return emotionSelectResult;
     }

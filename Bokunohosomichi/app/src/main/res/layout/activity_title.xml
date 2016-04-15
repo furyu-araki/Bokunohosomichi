@@ -6,16 +6,18 @@
     android:background="@drawable/title"
     tools:context=".TitleActivity">
 
-    <Button
+    <ImageButton
         android:id="@+id/title_button_start"
-        android:layout_width="200dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="120dp"
         android:background="#ffa528"
-        android:text="スタート"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+        android:src="@drawable/strar_btn"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:onClick=""
+        />
 
 </RelativeLayout>

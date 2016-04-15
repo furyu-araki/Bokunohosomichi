@@ -19,13 +19,28 @@ public class ResultDisplayActivity extends AppCompatActivity {
         resultImage.setImageURI(ImageSelectResult.getInstance().GetFileUrl());
 
         VerticalTextLinearLayout verticalText1 = (VerticalTextLinearLayout) findViewById(R.id.result_display_vertical_text1);
-        verticalText1.setText("あいうえお");
+        verticalText1.setText("春日和");
 
+        String text2 = "";
+        EmotionSelectResult.Emotion emotion = EmotionSelectResult.GetInstance().Get();
+        switch (emotion) {
+            case Presure:
+                text2 = "笑顔になるね";
+                break;
+            case Anger:
+                text2 = "げきおこですよ";
+                break;
+            case Sad:
+                text2 = "ため息もれる";
+                break;
+            case Fun:
+                text2 = "心おどるよ";
+                break;
+        }
         VerticalTextLinearLayout verticalText2 = (VerticalTextLinearLayout) findViewById(R.id.result_display_vertical_text2);
-        verticalText2.setText("かきくせこさし");
+        verticalText2.setText(text2);
 
         VerticalTextLinearLayout verticalText3 = (VerticalTextLinearLayout) findViewById(R.id.result_display_vertical_text3);
-        verticalText3.setText("すせそたち");
-
+        verticalText3.setText("がんばろう");
     }
 }

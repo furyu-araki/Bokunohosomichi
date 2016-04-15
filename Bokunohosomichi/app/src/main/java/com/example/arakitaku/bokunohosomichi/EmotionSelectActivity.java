@@ -1,5 +1,6 @@
 package com.example.arakitaku.bokunohosomichi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -19,5 +20,6 @@ public class EmotionSelectActivity extends AppCompatActivity {
 
     public void b1(View v) {
         ((TextView) findViewById(R.id.top_text)).setText("ほげ");
+        startActivity(new Intent(EmotionSelectActivity.this, ResultDisplayActivity.class));
     }
 }

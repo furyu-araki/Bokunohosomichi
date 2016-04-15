@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".ImageSelectActivity" />
         <activity android:name=".EmotionSelectActivity" />
+        <activity android:name=".ResultDisplayActivity" />
     </application>
 
 </manifest>

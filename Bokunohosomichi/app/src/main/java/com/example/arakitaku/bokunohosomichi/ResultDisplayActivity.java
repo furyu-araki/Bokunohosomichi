@@ -13,5 +13,8 @@ public class ResultDisplayActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result_display);
+
+        VerticalTextLinearLayout verticalText1 = (VerticalTextLinearLayout) findViewById(R.id.result_display_vertical_text1);
+        verticalText1.setText("あいうえお");
     }
 }

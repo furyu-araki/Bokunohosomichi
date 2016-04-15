@@ -5,35 +5,45 @@
     android:gravity="center"
     android:layout_height="match_parent">
 
-    <Button
+    <ImageButton
         android:id="@+id/b1"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/b0"
         android:onClick="b1"
-        android:text="嬉しい" />
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@drawable/emo_1"
+        />
 
-    <Button
+    <ImageButton
         android:id="@+id/b2"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
         android:layout_height="wrap_content"
         android:layout_below="@+id/b0"
-        android:onClick="b2"
-        android:text="苛立たしい" />
+        android:src="@drawable/emo_2"
+        android:onClick="b2"/>
 
-    <Button
+    <ImageButton
         android:id="@+id/b3"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
         android:layout_height="wrap_content"
         android:layout_below="@+id/b0"
         android:onClick="b3"
-        android:text="哀しい" />
+        android:src="@drawable/emo_3"
+        />
 
-    <Button
+    <ImageButton
         android:id="@+id/b4"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
         android:layout_height="wrap_content"
         android:layout_below="@+id/b0"
         android:onClick="b4"
-        android:text="楽しい" />
+        android:src="@drawable/emo_4" />
 </LinearLayout>

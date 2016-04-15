@@ -4,8 +4,40 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/top_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="感情を選んでください"/>
 
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b0"
+        android:onClick="b1"
+        android:text="嬉しい" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b0"
+        android:onClick="b1"
+        android:text="苛立たしい" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b0"
+        android:onClick="b1"
+        android:text="哀しい" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b0"
+        android:onClick="b1"
+        android:text="楽しい" />
 </LinearLayout>
